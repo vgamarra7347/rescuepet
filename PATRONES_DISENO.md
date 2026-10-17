@@ -72,3 +72,21 @@ Se eligió este patrón porque el sistema necesita mantener informados a los usu
 **¿Qué problema resuelve?**
 
 Observer ayuda a evitar que cada componente tenga que consultar constantemente si ocurrió algún cambio. En su lugar, los componentes interesados pueden recibir una notificación cuando se produce un evento relevante, lo que mejora la organización y la comunicación dentro del sistema.
+
+### 3.4. MVC (Modelo-Vista-Controlador)
+
+**¿Qué es?**
+
+MVC es un patrón arquitectónico que divide una aplicación en tres partes: el Modelo, que gestiona los datos; la Vista, que presenta la información al usuario; y el Controlador, que recibe las acciones del usuario y coordina las operaciones correspondientes.
+
+**Aplicación en RescuePet**
+
+En el diseño de RescuePet, MVC puede utilizarse para separar la información de los animales, los casos de rescate y las adopciones de las pantallas que utilizarán los usuarios. El Controlador se encargaría de coordinar las acciones, como registrar un rescate, consultar un animal o gestionar una adopción.
+
+**¿Por qué se eligió?**
+
+Se propone este patrón porque RescuePet necesita organizar diferentes procesos y permitir que los usuarios interactúen con el sistema de manera clara. La separación de responsabilidades facilita la comprensión del diseño y los posibles cambios futuros.
+
+**¿Qué problema resuelve?**
+
+MVC ayuda a evitar que la presentación de la información, la gestión de los datos y la lógica de las operaciones estén mezcladas en una sola parte del sistema. Esto facilita el mantenimiento y la organización de sus componentes.
