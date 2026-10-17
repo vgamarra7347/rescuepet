@@ -16,7 +16,9 @@ Diseñar un sistema que facilite la gestión de rescates y adopciones mediante e
 
 ### Documentación
 - `ANALISIS.md`: contiene la descripción del problema, los actores y los requerimientos del sistema.
-- `diagrama1_rescuepet`: contiene el diagrama UML de casos de uso.
-
+- `Diagrama1_Rescuepet.drawio.xml`: diagrama UML de casos de uso.
+- `diagrama2_clases_rescuepet.drawio.xml`: diagrama UML de clases.
+- `diagrama3_secuencia_rescuepet.drawio.xml`: diagrama UML de secuencia.
+- `PATRONES_DISENO.md`: documentación de los patrones de diseño del proyecto.
 ### Estado del proyecto
 El proyecto se encuentra en la etapa de análisis y diseño del sistema.
