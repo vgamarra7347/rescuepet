@@ -54,3 +54,21 @@ Se propone Singleton para mantener organizado el acceso a las operaciones princi
 **¿Qué problema resuelve?**
 
 Este patrón ayuda a evitar que existan múltiples instancias de `SistemaRescate` cuando se requiere una única instancia compartida. Su aplicación debe definirse en el diseño y comprobarse si posteriormente se implementa el sistema mediante código.
+
+### 3.3. Observer
+
+**¿Qué es?**
+
+Observer es un patrón de diseño de comportamiento que permite notificar automáticamente a los componentes interesados cuando ocurre un cambio en un objeto. De esta forma, los componentes pueden mantenerse informados sin depender directamente unos de otros.
+
+**Aplicación en RescuePet**
+
+En RescuePet, se propone utilizar Observer para notificar los cambios importantes en los casos de rescate. Por ejemplo, cuando el estado de un caso cambia de registrado a en proceso o resuelto, el sistema podría generar una notificación para los usuarios o responsables relacionados con ese caso.
+
+**¿Por qué se eligió?**
+
+Se eligió este patrón porque el sistema necesita mantener informados a los usuarios y responsables sobre las novedades de los rescates. Su utilización ayudaría a organizar las notificaciones y reducir la dependencia directa entre las clases involucradas.
+
+**¿Qué problema resuelve?**
+
+Observer ayuda a evitar que cada componente tenga que consultar constantemente si ocurrió algún cambio. En su lugar, los componentes interesados pueden recibir una notificación cuando se produce un evento relevante, lo que mejora la organización y la comunicación dentro del sistema.
