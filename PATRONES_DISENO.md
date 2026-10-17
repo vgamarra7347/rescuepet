@@ -36,3 +36,21 @@ Se seleccionó este patrón porque el sistema necesita registrar y gestionar ani
 **¿Qué problema resuelve?**
 
 Factory Method ayuda a evitar que la lógica de creación de objetos se repita en diferentes partes del sistema. Esto facilita el mantenimiento y permite que las responsabilidades estén mejor distribuidas entre las clases.
+
+### 3.2. Singleton
+
+**¿Qué es?**
+
+Singleton es un patrón de diseño creacional que busca garantizar que una clase tenga una única instancia y proporcionar un punto de acceso a ella cuando sea necesario.
+
+**Aplicación en RescuePet**
+
+En el diseño de RescuePet, se propone aplicar este patrón a la clase `SistemaRescate`, con el objetivo de centralizar el acceso a las funciones principales del sistema. De esta manera, los componentes que necesiten utilizar los servicios generales podrán acceder a una única instancia de esta clase.
+
+**¿Por qué se eligió?**
+
+Se propone Singleton para mantener organizado el acceso a las operaciones principales de RescuePet y evitar la creación de varias instancias de la clase encargada de coordinar el sistema.
+
+**¿Qué problema resuelve?**
+
+Este patrón ayuda a evitar que existan múltiples instancias de `SistemaRescate` cuando se requiere una única instancia compartida. Su aplicación debe definirse en el diseño y comprobarse si posteriormente se implementa el sistema mediante código.
