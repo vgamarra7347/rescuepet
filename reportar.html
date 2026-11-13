@@ -1,11 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Reportar Animal - RescuePet</title>
 </head>
 <body>
-    
+    <header>
+        <h1>RescuePet</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="reportar.html">Reportar Caso</a></li>
+                <li><a href="rescates.html">Lista de Rescates</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Formulario de Reporte de Animal en Situación de Calle</h2>
+            <p>Complete los siguientes campos obligatorios para notificar a nuestro equipo de rescate.</p>
+            <form action="#" method="POST">
+                <div>
+                    <label for="tipo_animal">Tipo de Animal:</label><br>
+                    <select id="tipo_animal" name="tipo_animal" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="perro">Perro</option>
+                        <option value="gato">Gato</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="ubicacion">Ubicación exacta del incidente:</label><br>
+                    <input type="text" id="ubicacion" name="ubicacion" placeholder="Ej. Calle 5 y Av. Metropolitana" required>
+                </div>
+                <br>
+                <div>
+                    <label for="descripcion">Descripción física y estado de salud aparente:</label><br>
+                    <textarea id="descripcion" name="descripcion" rows="4" cols="40" placeholder="Describa el color, tamaño y si presenta heridas visibles..." required></textarea>
+                </div>
+                <br>
+                <div>
+                    <label for="contacto">Teléfono de contacto del reportante:</label><br>
+                    <input type="tel" id="contacto" name="contacto" placeholder="0999999999" required>
+                </div>
+                <br>
+                <button type="submit">Enviar Reporte</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 RescuePet - Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
