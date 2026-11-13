@@ -19,4 +19,6 @@ Diseñar un sistema que facilite la gestión de rescates y adopciones mediante e
 - `diagrama1_rescuepet`: contiene el diagrama UML de casos de uso.
 
 ### Estado del proyecto
-El proyecto se encuentra en la etapa de análisis y diseño del sistema.
+El proyecto cuenta con las fases de análisis, diseño de patrones y maquetación estructural en HTML5 puro completadas en la rama `develop`.
+
+"MAQUETACION.md": detalla la estructura semántica HTML5 de las vistas principales (`index.html`, `reportar.html`, `rescates.html`).
